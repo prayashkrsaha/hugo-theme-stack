@@ -1,3 +1,4 @@
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 {{ define "main" }}
     {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
     {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
